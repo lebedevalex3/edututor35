@@ -1,0 +1,209 @@
+---
+id: doc1
+title: Вписанный четырёхугольник
+---
+
+import Image from '@theme/IdealImage';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+---
+
+### Какой четырехугольник называют вписанным
+
+:::info Определение
+**Вписанный четырёхугольник** - это четырёхугольник, вершины которого лежат на одной окружности.
+:::
+В этом случае окружность называется **описанной**.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/inscribed.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+
+:::caution обратите внимание!
+
+- около любого треугольника можно описать
+  окружность;
+- не каждый четырёхугольник можно вписать в окружность.
+
+:::
+
+---
+
+### Свойство  вписанного четырехугольника {#pr}
+
+:::info теорема (свойство)
+Если четырехугольник является вписанным в окружность, то сумма его противолежащих углов равна $180^0.$
+:::
+
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/img02_10.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+<br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство свойства</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/img02.png')}
+  style={{ width: '40%' }}
+/>
+</div>
+
+      Пусть четырёхугольник $ABCD$ вписан в окружность. Докажем, что{' '}
+      $\angle A + \angle C = 180^0. $
+      <br />
+      Так как углы $A $ и $B $ являются вписанными, то{' '}
+      $\angle A=\dfrac12$
+      &#9697;
+      $BCD$ и $\angle C=\dfrac12$
+      &#9697;
+      $DAB$ (свойство вписанного угла).
+      <br />
+      Сумма этих дуг составляет окружность: &#9697;
+      $BCD$ +&#9697;
+      $DAB=360^0.$ Из этого следует, что $\angle A + \angle C =180^0.$
+      <br />
+      Аналогично: $\angle B + \angle D =180^0. \quad \blacksquare$
+
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+---
+
+
+### Признак  вписанного четырехугольника
+
+Распознать четырёхугольники, около которых можно описать окружность, позволяет следующая теорема.
+
+:::info теорема (признак)
+Если в четырёхугольнике сумма противолежащих углов равна $180^0$, то он является вписанным в окружность.
+:::
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/img02_11.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+
+<br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство признака</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+ <p>
+        Пусть в четырехугольнике $ABCD$ сумма противолежащих углов
+        $\angle A + \angle C = 180^0. \quad(1)$
+      </p>
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/img02_06.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+      <p>
+        Предположим, что около четырёхугольника нельзя описать окружность.Тогда опишем
+        окружность около треугольника $ABD$, в таком случае точка{' '}
+        $C$ будет лежать вне или внутри этой окружности. Пусть она
+        лежит вне её.
+      </p>
+      <p>
+        Тогда прямая $CD$ пересекает окружность в другой точке;
+        пусть в точке $C_1$. Значит четырёхугольник{' '}
+        $ABC_1D$ является вписанным и{' '}
+        $\angle A + \angle C_1 = 180^0. \quad (2)${' '}
+      </p>
+      Из равенств $(1)$ и $(2)$ заключаем, что{' '}
+      $\angle C = \angle C_1$
+      , но этого не может быть так $\angle C_1$ является внешним углом
+      треугольника $BC_1C$ и большего любого не смежного с ним, в частности{' '}
+      $\angle C. d \blacksquare$
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+---
+
+### Теорема о вписанном четырехугольнике
+
+<p>Обе теоремы можно сформулировать в виде одной теоремы:</p>
+
+:::info теорема
+Для того чтобы четырёхугольник был вписанным в окружность, **необходимо
+и достаточно**, чтобы сумма его противолежащих углов была равна $180^0$.
+:::
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/img03.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+<br />
+
+:::tip Следствия из теоремы
+
+- Около параллелограмма можно описать окружность, только если этот параллелограмм — прямоугольник. Центр этой окружности лежит в точке пересечения диагоналей прямоугольника.
+- Около ромба можно описать окружность, только если этот ромб — квадрат.
+- Около трапеции можно описать окружность, только если она равнобедренная
+
+:::
+
+### Вопросы для самоконтроля
+
+1. Какой четырёхугольник называют вписанным?
+2. В каком случае говорят, что окружность описана около четырёхугольника?
+3. Каким свойством обладают углы вписанного четырёхугольника?
+4. При каком условии четырёхугольник является вписанным?
+
+
+
+

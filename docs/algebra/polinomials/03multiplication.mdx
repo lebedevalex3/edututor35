@@ -1,0 +1,135 @@
+---
+id: doc3
+slug: /umnozhenie-mnogochlenov
+title: Умножение многочленов
+keywords: [многочлен, умножение многочленов]
+---
+
+
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
+
+:::tip Правило
+**Чтобы умножить многочлен на многочлен, нужно:** <br />
+
+- умножить **каждый одночлен** первого многочлена на каждый одночлен второго многочлена;
+- полученные произведения сложить.
+
+:::
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="умножение многочлена на многочлен"
+    img={require('./assets/mult01.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+<br/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство </b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    Пусть нужно раскрыть скобки в призведении $(a+b)(x-y).$ <br />
+    Введём новую переменную $t=x-y$, тогда получим:
+    $$
+    (a+b)(x-y)=(a+b)t=at+bt.
+    $$
+    Вернёмся к исходным переменным:
+     $$at+bt=a(x-y)+b(x-y)=ax-ay+bx-by.
+     $$
+    Таким образом,
+    $$
+    (a+b)(x-y)=ax-ay+bx-by.
+    $$
+
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+<br />
+<br />
+
+
+:::caution Обратите внимание
+Следует воспринимать знак минус перед одночленом не как `операцию вычитания`, а как знак самого одночлена. На начальных этапах рекомендуется проговаривать знаки одночленов во время выполнения умножения. <br />
+:::
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="умножение многочлена на многочлен"
+    img={require('./assets/multip02.png')}
+  style={{ width: '60%' }}
+/>
+</div>
+
+
+
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+  Упростите выражение $(3x-4)(2x+3)-(x-2)(x+5).$ <br />
+  <b>Решение:</b>
+
+$$
+\begin{gather*}
+(3x-4)(2x+3)-(x-2)(x+5)= \\
+=6x^2+9x-8x-12-(x^2+5x-2x-10)= \\
+=\underline{6x^2} + \underline{\underline{9x}} -\underline{\underline{8x}} -12 -\underline{x^2} -\underline{\underline{5x}} +\underline{\underline{2x}} +10 =\\
+=5x^2 -2x -2.
+\end{gather*}
+$$
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+Представьте в виде многочлена выражение $(a+2)(a-5)(a+3).$<br />
+<b>Решение:</b>
+$$
+\begin{gather*}
+(a+2)(a-5)(a+3) = \\
+= (a^2-5a+2a-10)(a+3) = \\
+= (a^2-3a-10)(a+3) = \\
+= a^3 +3a^2 - 3a^2 -9a -10a -30 = \\
+= a^3 -19a -30
+\end{gather*}
+$$
+  </TabItem>
+
+<TabItem value="Пример №3" label="Пример №3">
+Найдите четыре последовательных натуральных числа таких, что произведение третьего и четвёртого из них на $38$ больше произведения первого и второго.<br />
+<b> Решение. </b> <br />
+Пусть меньшее из этих чисел равно $x$, тогда три следующих числа будут равны $x+1, x+2, x+3.$ <br />
+По условию произведение $(x+2)(x+3)$ на $38$ больше, чем произведение $x(x+1)$, значит:  
+$$
+\begin{gather*}
+(x+2)(x+3)-x(x+1)=38; \\
+x^2+2x+3x+6-x^2-x=38; \\
+4x=32; \\
+x =8.
+\end{gather*}
+ $$
+<b> Ответ:</b> $8, 9, 10, 11.$
+
+  </TabItem>
+
+
+</Tabs>  

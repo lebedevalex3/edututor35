@@ -1,0 +1,233 @@
+---
+id: doc2
+slug: /delenie-i-drobi
+title: Деление и дроби
+keywords:
+  [
+    доля числа,
+    обыкновенная дробь,
+    числитель,
+    знаменатель,
+    как найти дробь от числа,
+  ]
+---
+
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+## Дробь как результат деления
+
+До этого мы говорили, что $2$ не делится на $3$, так как любое натуральное число, умноженное на $3$, не равно $2$. ([определение делимости](/docs/svojstva-delimosti-chisel)). Теперь, когда мы познакомились с дробями, мы можем выполнить это действие. Объясним это на примере.
+
+#### Пример 1.
+
+Разделите два одинаковых блина между тремя детьми поровну. <br/>
+**Решение.**
+Разделим каждый блин на $3$ равные части. В результате получим $6$ долей (каждая равна $\dfrac13$ блина).
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/02frac11.png')}
+  style={{ width: '70%' }}
+/>
+</div>
+
+
+
+Теперь эти $6$ долей мы можем разделить между тремя детьми.<br />
+Каждый ребенок получит по $2$ доли, то есть по $\dfrac23$ части блина. <br />
+Следовательно, $2:3 =\dfrac23$.
+
+:::tip Запомните
+Любая **дробь** представляет собой **результат деления** числителя на знаменатель. <br />
+**Черта дроби** заменяет собой **знак деления**.
+:::
+
+<Tabs>
+  <TabItem value="Пример 1" label="Результат - натуральное число" default>
+ Если деление производится без остатка, то частным является <b>натуральное число</b>. <br />  <br /> 
+ 
+
+
+
+  $$32:4=\dfrac{32}{4}=8;$$ 
+
+  $$12:3=\dfrac{12}{3}=4;$$ 
+
+
+  $$15:5=\dfrac{12}{3}=3.$$ <br /> 
+ 
+ <br /><br />
+
+  </TabItem>
+<TabItem value="Пример №2" label="Результат - дробное число">
+Если деление производится с остатком, то частным является <b>дробное число</b>. <br /> <br /> 
+   $3:7=\dfrac{3}{7};$ <br /> <br /> 
+  $1:3=\dfrac{1}{3};$ <br /> <br /> 
+  $5:3=\dfrac{5}{3}.$ <br /> 
+  </TabItem>
+  </Tabs>
+
+<hr />
+
+:::tip Обратите внимание
+Любое целое число можно записать как дробь с любым натуральным знаменателем. Числитель такой дроби должен быть равен произведению знаменателя на это число:
+:::
+
+
+**Например:**
+
+
+$$5=\dfrac{5}{1}=\dfrac{10}{2}=\dfrac{15}{3}=...\:; \\~\\  7= \dfrac{7}{1}=\dfrac{14}{2}=\dfrac{21}{3}=...\:.$$
+
+
+
+## Какую часть одно число составляет от другого
+
+**Задача.** В группе $8$ учеников, из них $3$ ученика - отличники. Какую часть группы составляют отличники? <br />
+
+<br />
+
+**Решение.** <br />
+Здесь целое (_единица_) - это вся группа, то есть $8$ учеников. <br />
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/02frac07.png')}
+  style={{ width: '70%' }}
+/>
+</div>
+
+
+$1$ ученик - это $\dfrac18$ группы, а $3$ ученика - это $\dfrac38$ группы.
+
+<br />
+
+**Ответ:** отличники составляют $\dfrac38$ группы.
+
+<br />
+
+:::tip Правило (нахождение части одного числа от другого)
+Дробь $\dfrac{a}{b}$ показывает, какую часть составляет число $a$ от числа $b$.
+
+Для нахождения части, которую первое число составляет от второго, необходимо
+первое число разделить на второе.
+
+:::
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Какую часть составляет число $4$ от числа $6.$ Сделайте чертёж, поясняющий ответ.<br /><br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Здесь целое - это число $6.$ <br />
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/02frac08.png')}
+  style={{ width: '70%' }}
+/>
+</div>
+
+
+      Число $4$ составляет $\dfrac46$ от числа $6.$<br /><br />
+      <b>Ответ:</b> $\dfrac46$
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+  Турист должен был пройти $45$ км. В первый день он прошёл  $17$ км. Какую часть пути туристу осталось пройти?<br /><br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Здесь целое - это весь путь, то есть $45$ км. <br />
+      Один километр - это $\dfrac{1}{45}$ часть пути. <br />
+      Туристу осталось пройти $45 -17=28$ км или{' '}
+      $\dfrac{28}{45}$ пути.
+      <br />
+      <br />
+      <b>Ответ:</b> Туристу осталось пройти $\dfrac{28}{45}$ пути.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+  В саду было  $25$ деревьев, из них  $13$ яблонь, а остальные - груши. Какую часть деревьев составляют груши?<br /><br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Здесь целое - это все деревья в саду, то есть $25$ деревьев.{' '}
+      <br />
+      Всего в саду $25-13=12$ груш. <br />
+      Это составляет $\dfrac{12}{25}$ всех деревьев.
+      <br />
+      <br />
+      <b>Ответ:</b> Груши составляют $\dfrac{12}{25}$ всех деревьев.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+
+</Tabs>
+
+## Вопросы для самоконтроля
+
+1. Какое арифметическое действие обозначает черта дроби?
+2. Каким числом может быть результат деления двух натуральных чисел?
+3. Каким должен быть числитель дроби со знаменателем $5$, чтобы эта дробь была
+   равна $4$?
+4. Как найти часть одного числа от другого?
+
+## Ресурсы урока
+
+[Конспект урока и задания по теме (цвет)](./assets/list02-division-fractions-color.pdf)
+
+[Конспект урока и задания по теме (черно-белый)](./assets/list02-division-fractions-black.pdf)

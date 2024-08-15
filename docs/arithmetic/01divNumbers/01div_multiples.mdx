@@ -1,0 +1,228 @@
+---
+id: doc1
+slug: /deliteli-i-kratnye
+title: Делители и кратные
+keywords:
+  [
+    делители числа онлайн,
+    найти делители числа,
+    делитель числа,
+    кратное числа,
+    чётные и нечётные числа,
+    математика 6 класс,
+  ]
+---
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import FindDivisors from '@site/src/components/FindDivisors/FindDivisors';
+
+
+
+---
+
+### Что называют делителем и кратным числа
+
+В равенстве $28:4=7$ число $28 -$ делимое, $4 -$ делитель, $7 -$ частное.
+
+:::info Определение
+Если число $m$ делится на $n$ без остатка, то число $m$ называется **кратным** числа $n$, а число $n -$ **делителем** числа $m$.
+:::
+
+<br />
+
+Число $28$ делится на $4$ без остатка, значит, $28$ кратно $4$. Выпишем все натуральные
+делители числа $28$:
+
+$$ 
+\{1, 2, 4, 7, 14, 28\}
+$$
+
+Ясно, что число $28$ кратно каждому из своих делителей.
+
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt="делимое и кратное"
+    img={require('./assets/01div.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+
+
+
+<br />
+
+:::tip
+Все формулировки будут верными:
+
+- "Число $28$ делится нацело на число $7$";
+- "Число $7$ является делителем числа $28$";
+- "Число $28$ кратно числу $7$";
+- "Число $28$ является кратным числа $7$".
+
+:::
+
+<br />
+
+Например, для того чтобы найти числа, кратные $5$, надо умножить $5$ на числа $1,2,3,4, ...$.
+Мы получим числа $\{5, 10, 15, 20, ... \}$ - числа кратные $5$. Чисел, кратных числу $5$, бесконечно много, поэтому всех их перечислить нельзя.
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Выпишите, начиная с наименьшего, все делители числа  $30.$
+
+ <Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Делители числа $30:$
+      $$
+      \{1,2,3,5,6,10,15,30\} 
+      $$
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+  Выпишите, начиная с наименьшего, пять чисел, кратных $12$.
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Числа, кратные числу $12$:
+      
+      $$
+      \{12,24,36,48,60\}
+      $$
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+   Найдите все общие делители чисел $36$ и  $24$.
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Общие делители чисел $36$ и $24$:
+      $$
+      \{1,2,3,4,6,12\}
+      $$
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+
+</Tabs>
+
+---
+
+### Чётные и нечётные числа
+
+<br />
+
+:::info определение
+Числа, кратные $2$, называются чётными числами. Число $0$ считается чётным числом.
+
+:::
+
+<br />
+
+Чётные числа: $0,2,4,6,8,10,12,...$
+
+<br />
+
+:::info определение
+Числа, которые не делятся на $2$, называются нечётными.
+
+:::
+
+<br />
+
+Нечётные числа: $1,3,5,7,9,11, ...$
+
+<br />
+
+:::tip Обратите внимание
+
+- Последняя цифра чётного числа $0,2,4,6$ или $8$. Например, $2358$ и $1274$ - чётные числа.
+- Последняя цифра нечётного числа $1,3,5,7$ или $9$. Например, $12449$ и $32457$ - нечётные числа.
+
+:::
+
+<br />
+
+Ряд натуральных чисел начинается с нечётного числа $1$. Затем за $1$ следуют попеременно чётные и нечетные числа:
+
+$$
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ...
+$$
+
+
+---
+
+<br />
+
+
+
+### Вопросы для самоконтроля
+
+1. Что такое кратное числа? Делитель числа?
+2. Сколько делителей у числа $19$? А кратных?
+3. Какое число является делителем любого натурального числа?
+4. Какое число является наибольшим делителем натурального числа $a$?
+5. Какое число является наименьшим кратным натурального числа $a$?
+6. Как вы понимаете утверждение: "Учителя ожидают двукратного увеличения зарплаты"?
+7. Какие числа называют чётными?
+8. Какие числа называют нечётными?
+
+<br />
+
+### Калькулятор: делители натурального числа
+
+<FindDivisors />
+
+### Ресурсы урока
+
+[Лист для работы на уроке](./assets/01deliteli-i-kratnye-lesson.pdf) <br/>
+[Лист для домашней работы](./assets/01deliteli-i-kratnye-homework.pdf) <br/>

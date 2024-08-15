@@ -1,0 +1,331 @@
+---
+id: doc2
+title: Свойства степени с натуральным показателем
+keywords:
+  [
+    Свойства степени,
+    умножение степеней с одинаковым основанием,
+    основное свойство степени,
+    возведение степени в степень,
+  ]
+description: 'Рассмотрим свойства степени с одинаковым основанием: основное свойство степени, деление степеней с одинаковым основанием, возведение степени в степень.'
+slug: /svojstva-stepeni-s-naturalnym-pokazatelem
+---
+
+
+
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+### Основное свойство степени
+
+:::info Теорема
+Для любого числа $a$ и любых натуральных чисел $m$ и $n$ справедливо равенство:
+
+$$
+a^ma^n=a^{m+n}
+$$
+:::
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство теоремы</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+1\) $a^m=\underbrace{a\cdot a \cdot ... \cdot a}_{\text{m множителей}};$
+
+2\) $a^n=\underbrace{a\cdot a \cdot ... \cdot a}_{\text{n множителей} };$
+
+3\) $a^ma^n=\underbrace{a\cdot a \cdot ... \cdot a}_{\text{m множителей} } \cdot \underbrace{a\cdot a \cdot ... \cdot a}_{\text{n множителей} }= \underbrace{a \cdot a \cdot ... \cdot a}_{\text{n+m множителей}}=a^{n+m}.$
+
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+  Представить в виде степени произведение:  $b^5b^3$
+
+<b>  Решение:</b> 
+
+$b^5b^3=b^{5+3}=b^8$
+
+  </TabItem>
+  <TabItem value="Пример №2" label="Пример №2">
+   Представить в виде степени произведение:  $(a-c)^3(a-c)^4$
+
+<b>  Решение:</b> 
+
+$(a-c)^3(a-c)^4=(a-c)^{3+4}=(a-c)^{7}$
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+   Представить в виде степени произведение: $(-xy)^3(-xy)^4(-xy)^6$
+
+<b>Решение:</b>
+
+ $(-xy)^3(-xy)^4(-xy)^6=(-xy)^{3+4+6}=(-xy)^{13}$
+
+  </TabItem>
+
+</Tabs>
+
+
+
+:::tip Правило
+При умножении степеней с одинаковыми основаниями показатели складывают,
+а основание оставляют прежним.
+:::
+---
+<br/>
+### Деление степеней с одинаковым основанием
+
+:::info Теорема
+Для любого числа $a$, отличного от нуля, и любых натуральных чисел $m$ и $n$ таких, что $m > n$ справедливо равенство:
+
+$$
+a^m:a^n=a^{m-n}
+$$
+:::
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство теоремы</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+1. Рассмотрим произведение $a^{m-n}\cdot a^n$. По основному свойству степени получим:
+   $$
+   a^{m-n}\cdot a^n= a^{m-n+n}=a^m.
+   $$
+2. Итак, $a^{m-n}\cdot a^n=a^m$, а это означает (по определению частного), что $a^m:a^n=a^{m-n}.$
+   
+  </Typography>
+  </AccordionDetails>
+</Accordion>
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Представить в виде степени частное:  $a^{13}:a^4$
+<br/>
+<br />
+<b> Решение:</b> 
+$a^{13}:a^4=a^{13-4}=a^{9}$
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+  Представить в виде степени частное:  $(a+b)^7:(a+b)^5$
+<br />
+<br />
+<b>Решение:</b> 
+
+$(a+b)^7:(a+b)^5=(a+b)^{7-5}=(a+b)^2$
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+   Найти значение выражения: $\left(-1\dfrac18\right)^5:\left(-1\dfrac18\right)^3$
+<br/>
+<br/>
+<b>Решение:</b> $\left(-1\dfrac18\right)^5:\left(-1\dfrac18\right)^3=\left(-1\dfrac18\right)^{5-3}=\left(-1\dfrac18\right)^2=\dfrac{81}{64}=1\dfrac{17}{64}$
+
+  </TabItem>
+
+</Tabs>
+
+
+
+
+
+:::tip Правило
+При делении степеней с одинаковым основанием из показателя делимого вычитают показатель делителя.
+:::
+
+<br />
+
+:::caution Будьте внимательны
+В расмотренных теоремах (правилах) речь идёт только
+об **умножении** и **делении** степеней с одинаковыми основаниями. А для сложения
+и вычитания степеней таких правил нет. Нельзя, например, заменить сумму $3^2+3^3$
+на $3^5$. Достаточно посчитать, чтобы убедиться в этом: $3^2=9$, $3^3=27$, а $3^5=243$.
+:::
+
+---
+<br/>
+
+### Возведение степени в степень
+
+:::info Теорема
+Для любого числа $a$ и любых натуральных чисел $m$ и $n$ справедливо равенство:
+
+$$
+\left(a^m\right)^n=a^{mn}
+$$
+:::
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство теоремы</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+$$
+\left(a^m\right)^n=\underbrace{a^m \cdot a^m \cdot ... \cdot a^m}_{\text{n множителей}}="
+$$
+
+$$
+=\underbrace{(a\cdot a \cdot ... \cdot a)\cdot(a\cdot a\cdot ... \cdot a) \cdot ... \cdot (a \cdot a \cdot ... \cdot a)}_{\text{n групп по m множителей в каждой }}="
+$$
+
+$$
+=\underbrace{a \cdot a \cdot ... \cdot a \cdot a\cdot ... \cdot a \cdot a \cdot ... \cdot a}_{\text{nm множителей}}=a^{nm}"
+$$
+   </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Представьте в виде степени с основанием $a$ выражение:  $(a^4)^5$
+<br/>
+<b>  Решение:</b> 
+  $(a^4)^5=a^{4 \cdot 5}=a^{20}$
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+  Представьте в виде степени с основанием $a$  выражение:  $\left(\left(a^3\right)^4\right)^5$
+<br />
+<b>Решение:</b> 
+$\left(\left(a^3\right)^4\right)^5=\left(a^3\right)^{20}=a^{60}$
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+  Представьте в виде степени с основанием $a$ выражение: $\left(a^7\right)^2 \cdot \left(a^4\right)^9$
+<br/>
+<b>Решение:</b> 
+$\left(a^7\right)^2 \cdot \left(a^4\right)^9 = a^{14} \cdot a^{36}=a^{50}$
+
+  </TabItem>
+
+</Tabs>
+
+
+<br />
+
+:::tip Правило
+При возведении степени в степень показатели перемножаются.
+:::
+
+---
+<br/>
+
+
+### Возведение произведения в степень
+
+:::info Теорема
+Для любых чисел $a$ и $b$ и любого натурального числа $n$ справедливо равенство:
+
+$$
+(ab)^n=a^nb^n
+$$
+:::
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство теоремы</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+$$
+(ab)^n=\underbrace{(ab)\cdot (ab) \cdot ... \cdot (ab)}_{\text{n множителей}}=
+$$
+
+$$
+=\underbrace{(a\cdot a \cdot ... \cdot a)}_{\text{n множителей}}\cdot \underbrace{(b\cdot b \cdot ... \cdot b)}_{\text{n множителей}}=a^nb^n
+$$
+   </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+<br />
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Представьте в виде произведения степеней:  $(mn)^7$
+<br/>
+<b> Решение:</b> 
+  $(mn)^7=m^7n^7$
+
+<br/>
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+  Представьте в виде произведения степеней:  $(-ab)^4$
+<br />
+<b>Решение:</b> $(-ab)^4=(-1)^4\cdot a^4 \cdot b^4 = a^4b^4$
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+  Представьте в виде произведения степеней:  $(-8xy)^3$
+<br/>
+<b>Решение:</b> $(-8xy)^3=(-8)^3\cdot x^3\cdot y^3$
+
+  </TabItem>
+
+</Tabs>
+
+:::tip Правило
+При возведении произведения в степень каждый множитель возводят в степень и полученные результаты перемножают.
+:::
+
+### Вопросы для самоконтроля
+
+1. Как умножить степени с одинаковым основанием?
+2. Как разделить степени с одинаковым основанием?
+3. Как возвести степень в степень?
+4. Как возвести произведение в степень?
+5. Запишите тождество, выражающее основное свойство степени.

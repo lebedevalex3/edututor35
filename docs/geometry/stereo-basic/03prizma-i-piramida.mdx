@@ -1,0 +1,169 @@
+---
+id: doc3
+slug: /prizma-i-piramida
+title: Призма и пирамида
+hide_table_of_contents: false
+toc_max_heading_level: 4
+keywords: [многогранник, призма, пирамида]
+---
+
+import Image from '@theme/IdealImage';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+---
+
+
+### Многогранники
+
+В стереометрии рассматривают пространственные тела, поверхность которых состоит из плоских многоугольников. Их называют `многогранниками`.
+
+:::info Определение
+**Многогранник** – тело, поверхность которого состоит из плоских многоугольников.
+:::
+
+Некоторые многогранники имеют специальные названия: `призма` и `пирамида`.
+
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo03-01.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+---
+
+
+### Призма
+
+:::info Определение
+**Призма** –  это многогранник, две грани которого - равные многоугольники с соответственно параллельными сторонами, а все остальные грани – параллелограммы.
+:::
+
+`Призму` называют в зависимости от многоугольника, который образует её основание. Так, если основание представляет собой четырёхугольник, это будет _четырёхугольная призма_; если шестиугольник — _шестиугольная призма_.
+
+Призмы бывают `прямыми`, если их боковые ребра перпендикулярны основанию, и `наклонными` в противном случае.
+
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo03-02.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+---
+
+
+### Пирамида
+
+:::info Определение
+**Пирамида** - многогранник, одна грань которого - произвольный многоугольник, а все остальные грани - треугольники, имеющие общую вершину.
+:::
+
+`Пирамиды` называют в зависимости от своего основания: _треугольная_, _четырехугольная_ и так далее. Треугольную пирамиду также называют
+`тетраэдром`.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo03-03.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+
+---
+
+### Пример №1
+
+На рисунке изображен прямоугольный параллелепипед $ABCDA_1B_1C_1D_1$.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo03-04.png')}
+  style={{ width: '30%' }}
+/>
+</div>
+
+1. Принадлежит ли точка $C_1$ плоскости $CDD_1$?
+2. В какой точке прямая $AB$ пересекает плоскость $B_1C_1C$?
+3. Какая плоскость проходит через точку $B$ и прямую $CD$?
+4. По какой прямой пересекают плоскости $ABC$ и $A_1B_1B$?
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    
+1) Грань прямоугольного параллелепипеда $CDD_1C_1$ принадлежит плоскости $CDD_1$, следовательно точка $C_1$
+   принадлежит этой плоскости.<br/>
+2. Поскольку $B\in AB$ и $B \in (B_1C_1C)$, то $AB\cap(B_1C_1B)=B$.<br/>
+3. Через точку $B$ и прямую $CD$ проходит плоскость $BCD$.<br/>
+4. Поскольку $AB \subset (ABC)$, $AB\subset(A_1B_1B)$, то $(ABC)\cap(A_1B_1B)=AB$.
+
+</Typography>
+  </AccordionDetails>
+</Accordion>
+
+---
+
+
+### Пример №2
+
+На рисунке изображен тетраэдр $DABC$. Укажите:
+
+1. плоскости, которым принадлежит прямая $KL$;
+2. точку пересечения прямой $BL$ с плоскостью $CAD$;
+3. прямую пересечения плоскостей $DKB$ и $ABC$.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo03-05.png')}
+  style={{ width: '30%' }}
+/>
+</div>
+
+
+
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+1. Поскольку $K\in(ACD)$ и $L\in (ACD)$, то $KL\subset (ACD)$, аналогично $KL \subset (DLB)$.<br/>
+2. Поскольку $L\in BL$ и $L\in (CAD)$, то $BL \cap (CAD)=L$.<br/>
+3. Поскольку $LB \subset (DKB)$ и $LB\subset (ABC)$, то $(DKB)\cap (ABC)=LB$.<br/>
+
+</Typography>
+
+  </AccordionDetails>
+</Accordion>

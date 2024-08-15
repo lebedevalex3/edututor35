@@ -1,0 +1,336 @@
+---
+title: Теорема Виета
+id: doc2
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+---
+
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Подобно формулам `сокращенного умножения`, теорема Виета позволяет уменьшить "трудозатраты" при решении квадратных уравнений.
+
+На практике теорема Виета в основном используется для приведённых квадратных уравнений.
+
+### Приведённое квадратное уравнение
+
+:::info Определение
+
+Квадратное уравнение, первый коэффициент которого равен $1$, называют **приведённым**.
+
+:::
+
+Например, уравнение $x^2+4x-6=0$ является приведённым квадратным уравнением.
+
+
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+          Любое квадратное уравнение $ax^2+bx+c=0$ можно "превратить" в **приведённое** разделив его на старший коэффициент $a$.
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      <div>
+      Например, уравнение $5x^2+7x-2=0$ делением на $5$ приводится к виду
+      $x^2+\dfrac75x-\dfrac25=0$
+      
+      В общем виде получаем: 
+      $$ 
+      ax^2+bx+c=0\vert:a, 
+      $$ 
+
+      $$
+      x^2+\dfrac{b}{a}x+\dfrac{c}{a}=0.
+      $$ 
+      
+      Затем избавляемся от дробных коэффициентов, заменив их буквами $p$
+      и $q$, и получаем общепринятый вид приведённого квадратного уравнения:
+      
+      $$
+      x^2+px+q=0.
+      $$ 
+      
+      Во многих учебниках используется именно такая форма
+      записи, однако не будет ошибкой, если в рассуждениях мы будем указывать,
+      что $a=1$ и использовать привычные нам коэффициенты $b$ и $c.$
+    </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+
+### Теорема Виета для приведенного квадратного уравнения
+
+:::info Теорема
+Если $x_1$ и $x_2 -$ корни приведённого уравнения $x^2+bx+c=0$, то справедливы формулы: $$\begin{cases} x_1 \cdot x_2 =c, \\ x_1+x_2 =-b \end{cases}$$
+:::
+
+Сумма корней приведённого квдратного уравнения равна второму коэффициенту, взятому с противоположным знаком, а произведение корней равно свободному члену.
+
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+         <b>Доказательство</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      <div>
+    <div>
+      В условии теоремы сказано, что $x_1$ и $x_2$ -
+      корни уравнения, следовательно его дискриминант $D \geq 0.$
+      Запишем формулы корней квадратного уравнения:
+      $$
+      x_1=\dfrac{-b-\sqrt{D}}{2a}, x_2=\dfrac{-b+\sqrt{D}}{2a}
+      $$ 
+      Учитывая, что $a=1$, запишем сумму корней:
+      <br />
+      $x_1+x_2=\dfrac{-b-\sqrt{D}}{2}+\dfrac{-b+\sqrt{D}}{2}=-b.$
+      <br />
+      Запишем произведение корней:
+      <br />
+      $x_1\cdot x_2 =\dfrac{-b-\sqrt{D}}{2} \cdot \dfrac{-b+\sqrt{D}}{2}=\dfrac{b^2-D^2}{4}=\dfrac{b^2-(b^2-4c)}{4}=c. $
+      <br />
+      Ещё раз обратите внимание: мы учитываем, что $a=1$, то есть доказываем
+      теорему только для `приведённого уравнения`.
+    </div>
+    <br />
+  </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+
+#### Примеры решения задач
+
+<Tabs>
+  <TabItem value="Задача №1" label="Задача №1" default>
+    Один из корней уравнения $x^2-x-12=0$ равен{' '}
+    $x_1=4$. Найти второй корень этого уравнения.
+    <details>
+      <summary>
+        <b>Решение</b>
+      </summary>
+      <div>
+        <div>
+          По теореме Виета $x_1\cdot x_2 =-12$. Так как{' '}
+          $x_1=4$, то $4x_2=-12$, откуда{' '}
+          $x_2=-3$
+          <p><b>Ответ:</b> $x_2=-3$</p>
+        </div>
+        
+      </div>
+    </details>
+
+  </TabItem>
+  <TabItem value="Задача №2" label="Задача №2">
+   Составить приведенное квадратное уравнение, корни которого  $x_1=3, x_2=4.$
+   <details>
+      <summary>
+        <b>Решение</b>
+      </summary>
+      <div>
+        <div>
+         Так как $x_1=3, x_2=4-$ корни уравнения  $x^2+bx+c=0$, то по теореме Виета 
+         $$
+          b=-(x_1+x_2)=-7, \quad c=x_1\cdot x_2=12.
+        $$
+          <p><b>Ответ:</b> $x^2-7x+12=0$</p>
+        </div>
+      </div>
+    </details>
+
+  </TabItem>
+</Tabs>
+
+
+### Теорема, обратная теореме Виета
+
+С помощью теоремы, обратной теореме Виета, можно решать многие квадратные уравнения устно, не пользуясь формулами корней.
+
+
+:::info Теорема
+Если числа $\alpha$ и $\beta$ таковы, что $\alpha + \beta = -b$ и $\alpha \cdot \beta = c$, то эти числа являются корнями приведенного квадратного уравнения $x^2+bx+c=0.$
+:::
+
+
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+         <b>Доказательство</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    <div>
+    <div>
+      $\square$ Рассмотрим приведённое квадратное уравнение{' '}
+      $x^2+bx+c=0$.
+      
+      Согласно условию теоремы это уравнение можно записать так:
+      $$
+      x^2-(\alpha+\beta)x+\alpha \cdot \beta=0.
+      $$
+      Числа $\alpha$ и $\beta$ "кандидаты в корни"
+      уравнения. Подставим в полученное уравнение вместо $x$ сначала число $\alpha$, затем число $\beta$.
+      Получим:
+
+      $$
+      \alpha^2-(\alpha+\beta)\alpha +\alpha\beta=\alpha^2-\alpha^2-\alpha\beta+\alpha\beta=0
+      $$
+
+      $$
+      \beta^2-(\alpha+\beta)\beta +\alpha\beta=\beta^2-\alpha\beta-\beta^2+\alpha\beta=0
+      $$
+      Следовательно, числа $\alpha$ и $\beta$ корни нашего
+      уравнения. $ \blacksquare$
+    </div>
+    <br />
+  </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+#### Примеры решения задач
+
+<Tabs>
+  <TabItem value="Задача №1" label="Пример №1" default>
+    <p>Решить устно уравнение $x^2-11x+24=0$</p> 
+      
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+          <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      <div>
+        <div>
+        Подберем два числа $x_1$ и $x_2$ так, чтобы 
+           $$
+           \begin{cases} x_1 \cdot x_2 =24, \\ x_1+x_2 =11. \end{cases}
+           $$
+            Заметив, что $8\cdot 3 =24,\quad 8+3=11$, по теореме, обратной теореме Виета, получаем, что  $x_1=8, x_2=3$ - корни уравнения.
+          <p><b>Ответ:</b> $x_1=8, x_2=3.$ </p>
+        </div>
+        
+      </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+
+
+  </TabItem>
+  <TabItem value="Пример №2" label="Пример №2">
+   <p>Решить устно уравнение $x^2+11x+30=0$ </p>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+          <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+              <div>
+        <div>
+        Подберем два числа $x_1$ и $x_2$ так, чтобы 
+           $$
+           \begin{cases} x_1 \cdot x_2 =30, \\ x_1+x_2 =-11. \end{cases}
+           $$
+            Заметив, что $(-5)\cdot (-6) =30,\ (-5)+(-6)=-11$, по теореме, обратной теореме Виета, получаем, что  $x_1=-5, x_2=-6$ - корни уравнения.
+          <p><b>Ответ:</b> $x_1=-5, x_2=-6.$ </p>
+        </div>
+      </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+
+
+
+  </TabItem>
+  
+  <TabItem value="Пример №3" label="Пример №3">
+   <p>Решить устно уравнение $x^2+x-12=0$ </p>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+          <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+        <div>
+        <div>
+        Подберем два числа $x_1$ и $x_2$ так, чтобы 
+           $$
+           \begin{cases} x_1 \cdot x_2 =-12, \\ x_1+x_2 =-1. \end{cases} 
+           $$ 
+           Заметив, что $3\cdot (-4) =-12, \ 3-4=-1$, по теореме, обратной теореме Виета, получаем, что  $x_1=3, x_2=-4$ - корни уравнения.
+          <p><b>Ответ:</b> $x_1=3, x_2=-4.$ </p>
+        </div>
+      </div>
+  
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+  </TabItem>
+
+</Tabs>
+
+
+:::danger
+Чтобы избежать недоразумений, которые иногда возникают [(например, здесь)](https://vk.com/wall-150027546_4567) при использовании теоремы Виета, лучше в оформлении решения не упоминать название теоремы, а просто записывать корни.
+:::
+
+### Вопросы для самоконтроля
+
+1. Какое квадратное уравнение называют приведенным?
+2. Сформулируйте теорему Виета.
+3. Сформулируйте теорему, обратную теореме Виета.
+

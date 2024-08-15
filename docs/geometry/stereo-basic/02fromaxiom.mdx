@@ -1,0 +1,100 @@
+---
+id: doc2
+slug: /sledstviya-iz-aksiom-stereometrii
+hide_table_of_contents: false
+title: Следствия из аксиом стереометрии
+toc_max_heading_level: 4
+keywords:
+  [
+    стереометрия,
+    аксиомы стереометрии,
+    аксиома плоскости,
+    пересечение плоскостей,
+  ]
+---
+
+
+import Image from '@theme/IdealImage';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+---
+
+Согласно [аксиоме проведения плоскости](aksiomy-stereometrii#ax1), в пространстве плоскость однозначно определяется `тремя точками`, не лежащими на одной прямой.
+
+Рассмотрим другие методы задания плоскости в пространстве.
+
+### Задание плоскости прямой и точкой, которая не лежит на этой прямой {#tr01}
+
+:::info Теорема №1
+Через `прямую` и не принадлежащую её `точку` проходит `плоскость` и притом только одна.
+:::
+
+**Доказательство**
+
+Пусть даны прямая $b$ и не лежащая на ней точка $A$. Докажем, что через прямую $b$ и точку $A$ проходит плоскость.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo14.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+
+
+
+&#x24F5; Отметим на прямой $b$ две произвольные точки $B$ и $C$. Точки $A$, $B$ и $C$ не лежат на одной прямой $\Rightarrow$
+
+&#x24F6; $\Rightarrow$ по [аксиоме плоскости](aksiomy-stereometrii#ax1) через точки $A$, $B$ и $C$ проходит некоторая плоскость $\alpha$ $\Rightarrow$
+
+&#x24F7; $\Rightarrow$ по [аксиоме прямой и плоскости](aksiomy-stereometrii#ax2) $\alpha$ принадлежит и прямая $a$. $\blacksquare$
+
+### Задание плоскости двумя пересекающимися прямыми
+
+:::info Теорема №2
+Через две `прямые`, которые `пересекаются`, проходит `плоскость` и притом только одна.
+:::
+
+**Доказательство**
+
+Пусть даны две прямые $a$ и $b$, пересекающиеся в точке $M$. Докажем, что через прямые $a$ и $b$ проходит плоскость.
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo15.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+
+&#x24F5; Отметим на прямой $b$ точку $C$, отличную от точки $M$. Точка $C \notin a$, так как у прямых $a$ и $b$ только одна общая точка $M$ $\Rightarrow$
+
+&#x24F6; $\Rightarrow$ по [теореме 1](#tr01) через точку $C$ и прямую $a$ проходит некоторая плоскость $\gamma$. $\blacksquare$
+
+### Способы задания плоскости
+
+Плоскость в пространстве можно задать:
+
+- тремя точками, которые не лежат на одной прямой;
+- прямой и точкой, которая не лежит на этой прямой;
+- двумя пересекающимися прямыми;
+- двумя параллельными прямыми.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<Image
+  alt=""
+    img={require('./assets/stereo16.png')}
+  style={{ width: '50%' }}
+/>
+</div>
+
+
+
+### Ресурсы урока
