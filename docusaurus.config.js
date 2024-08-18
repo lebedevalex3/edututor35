@@ -54,11 +54,28 @@ const config = {
     defaultLocale: 'ru',
     locales: ['ru'],
   },
+
   plugins: [
     [
       '@docusaurus/plugin-ideal-image',
       { quality: 80, max: 800, disableInDev: false },
-    ],
+     ],
+     [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+        createSitemapItems: async (params) => {
+          const {defaultCreateSitemapItems, ...rest} = params;
+          const items = await defaultCreateSitemapItems(rest);
+          return items.filter((item) => !item.url.includes('/page/'));
+        },
+      }
+    ]
+    
   ],
   markdown: {
     mermaid: true,
