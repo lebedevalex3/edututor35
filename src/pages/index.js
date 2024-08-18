@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/welcome"
           >
-            Все курсы
+            Карта сайта
           </Link>
         </div>
       </div>
@@ -34,12 +34,12 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Школьная математика: интерактивный учебник с удобной навигацией и поиском для изучения всех разделов школьной программы по математике."
     >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <HomepageWebDevEverShop />
+        {/* <HomepageWebDevEverShop /> */}
       </main>
     </Layout>
   );

@@ -39,14 +39,9 @@ export default function Welcome() {
                 <li><Link to="/docs/modul-stereometriya">Введение в стереометрию</Link></li>
               </ul>
             </li>
-            <li><Link to="/blog">Блог</Link></li>
-            <li><Link to="/community">Сообщество</Link></li>
-            <li><Link to="/about">О нас</Link></li>
+            <h3><Link to="/blog">Блог</Link></h3>
           </ul>
-          
-               <li><Link to="/blog">Блог</Link></li>
-            <li><Link to="/community">Сообщество</Link></li>
-            <li><Link to="/about">О нас</Link></li>
+
           
         </section>
 
