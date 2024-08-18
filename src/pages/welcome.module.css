@@ -1,0 +1,65 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #f7f7f7;
+}
+
+.introSection {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Устанавливаем одинаковую ширину для обеих секций */
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.introSection h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.introSection p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.siteMapSection {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Устанавливаем одинаковую ширину для обеих секций */
+  width: 100%;
+  text-align: left;
+}
+
+.siteMapTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.siteMap {
+  list-style-type: none;
+  padding: 0;
+}
+
+.siteMap li {
+  margin-bottom: 0.5rem;
+}
+
+.siteMap li a {
+  text-decoration: none;
+  color: #2f80ed;
+  font-weight: bold;
+}
+
+.siteMap li a:hover {
+  text-decoration: underline;
+}

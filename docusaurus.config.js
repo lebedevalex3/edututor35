@@ -36,7 +36,10 @@ const config = {
       { quality: 80, max: 800, disableInDev: false },
     ],
   ],
-
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
 
 
@@ -80,6 +83,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      docs:{
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      }} ,
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Edututor',
@@ -124,7 +132,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            
             items: [
               {
                 label: 'Tutorial',
@@ -133,32 +141,26 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            //title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/@edututor9539',
               },
+
             ],
           },
+          {
+            //title: 'Community',
+            items: [
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@edututor9539',
+              },
+
+            ],
+          },
+
         ],
         copyright: `Все права защищены © ${new Date().getFullYear()} `,
       },

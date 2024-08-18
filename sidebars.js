@@ -28,14 +28,18 @@ const sidebars = {
     },
   ],
   algebra: [
+    'algebra/introAlgebra',
     {
       type: 'category',
       label: 'Квадратные уравнения',
+      link: {type: 'doc', id:'algebra/square-equations/introSquareEquations'},
       items: ['algebra/square-equations/doc2'],
     },
     {
       type: 'category',
       label: 'Степень и свойства степени',
+      
+      link: {type: 'doc', id:'algebra/degree_exponent/introToDegreeExponent'},
       items: [
         'algebra/degree_exponent/doc1',
         'algebra/degree_exponent/doc2',
@@ -51,15 +55,17 @@ const sidebars = {
   ],
 
   arifmet: [
+ 
     {
       type: 'category',
       label: 'Целые числа',
       items: ['arithmetic/001wholeNumbers/doc1'],
     },
     {
-      type: 'category',
-      label: 'Делимость натуральных чисел',
-      items: [
+      type: 'category',      
+      link: {type: 'doc', id:'arithmetic/01divNumbers/introTodivNumbers'},
+      label: 'Делимость натуральных чисел', 
+            items: [
         'arithmetic/01divNumbers/doc1',
         'arithmetic/01divNumbers/doc2',
         'arithmetic/01divNumbers/doc3',
@@ -71,6 +77,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Обыкновенные дроби',
+      link: {type: 'doc', id:'arithmetic/02commonFraction/introToCommonFraction'},
       items: [
         'arithmetic/02commonFraction/doc1',
         'arithmetic/02commonFraction/doc2',
@@ -91,6 +98,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Вписанные и описанные четырехугольники',
+      link: {type: 'doc', id:'geometry/inscribed-quadrilateral/introInscribed'},
       items: [
         'geometry/inscribed-quadrilateral/doc1',
         'geometry/inscribed-quadrilateral/doc2'
@@ -113,6 +121,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Стереометрия',
+      link: {type: 'doc', id:'geometry/stereo-basic/introStereo'},
       items: [
         'geometry/stereo-basic/doc01',
         'geometry/stereo-basic/doc1',   
