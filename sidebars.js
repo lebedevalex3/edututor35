@@ -55,6 +55,7 @@ const sidebars = {
   ],
 
   arifmet: [
+    'arithmetic/introArifmet',
  
     {
       type: 'category',
@@ -89,6 +90,7 @@ const sidebars = {
     
   ],
   geo: [
+    'geometry/introGeometry',
     {
       type: 'category',
       label: 'Начала геометрии',

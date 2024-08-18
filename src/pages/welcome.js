@@ -18,6 +18,7 @@ export default function Welcome() {
             <li>
             <h3>Арифметика</h3>
               <ul>
+              <li><Link to="/docs/Naturalnye-chisla-i-nul">Целые числа</Link></li>
                 <li><Link to="/docs/modul-deliteli-i-kratnye">Делимость натуральных чисел</Link></li>
                 <li><Link to="/docs/modul-drobi">Обыкновенные дроби</Link></li>
               </ul>
@@ -26,10 +27,14 @@ export default function Welcome() {
             <h3>Алгебра</h3>
               <ul>
                 <li><Link to="/docs/modul-square-equations">Квадратные уравнения</Link></li>
+                <li><Link to="/docs/umnozhenie-mnogochlenov">Многочлены</Link></li>
                 <li><Link to="/docs/modul-degree-exponent">Степень и свойства степени</Link></li>
               </ul>
               <h3>Геометрия</h3>
               <ul>
+              <li><Link to="/docs/osnovnye-geometricheskie-ponyatiya">Основные геометрические понятия</Link></li>
+              <li><Link to="/docs/similar-triangles">Подобные треугольники</Link></li>
+              <li><Link to="/docs/solution-right-triangles">Решение прямоугольных треугольников</Link></li>
                 <li><Link to="/docs/vpisannye-i-opisannye-chetyryohugolniki">Вписанные и описанные четырёхугольники</Link></li>
                 <li><Link to="/docs/modul-stereometriya">Введение в стереометрию</Link></li>
               </ul>
