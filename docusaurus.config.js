@@ -52,7 +52,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru'],
+    locales: ['ru','en'],
   },
 
   plugins: [
@@ -60,21 +60,7 @@ const config = {
       '@docusaurus/plugin-ideal-image',
       { quality: 80, max: 800, disableInDev: false },
      ],
-     [
-      '@docusaurus/plugin-sitemap',
-      {
-        lastmod: 'date',
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-        createSitemapItems: async (params) => {
-          const {defaultCreateSitemapItems, ...rest} = params;
-          const items = await defaultCreateSitemapItems(rest);
-          return items.filter((item) => !item.url.includes('/page/'));
-        },
-      }
-    ]
+
     
   ],
   markdown: {
@@ -89,7 +75,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+        docs: { 
           sidebarPath: './sidebars.js',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
