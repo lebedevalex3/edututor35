@@ -20,8 +20,6 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://edututor.ru',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   headTags: [
     {
       tagName: 'script',
@@ -46,10 +44,6 @@ const config = {
     },
   ],
 
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru','en'],
@@ -59,16 +53,15 @@ const config = {
     [
       '@docusaurus/plugin-ideal-image',
       { quality: 80, max: 800, disableInDev: false },
-     ],
-
-    
+    ],
+    customPostCssPlugin, // Здесь передаем функцию без вызова
   ],
+  
   markdown: {
     mermaid: true,
   },
+  
   themes: ['@docusaurus/theme-mermaid'],
-
-
 
   presets: [
     [
@@ -79,16 +72,12 @@ const config = {
           sidebarPath: './sidebars.js',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         blog: {
           showReadingTime: true,
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           blogSidebarTitle: 'Мои статьи',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -106,23 +95,22 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      
-        colorMode: {
-          disableSwitch: true,  // Отключает переключатель темы
+      colorMode: {
+        disableSwitch: true,  // Отключает переключатель темы
+      },
+      metadata: [
+        {name: 'keywords', content: 'математика, алгебра, геометрия, ЕГЭ по математике'},
+      ],
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
         },
-        metadata: [
-          {name: 'keywords', content: 'математика, алгебра, геометрия, ЕГЭ по математике'},
-                  ],
-   
-      docs:{
-      sidebar: {
-        hideable: true,
-        autoCollapseCategories: true,
-      }} ,
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Edututor',
@@ -131,7 +119,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-                   {
+          {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'arifmet',
@@ -150,14 +138,12 @@ const config = {
             label: 'Геометрия',
           },
           { to: '/blog', label: 'Блог', position: 'left' },
-
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            
             items: [
               {
                 label: 'VK',
@@ -166,26 +152,21 @@ const config = {
             ],
           },
           {
-            //title: 'Community',
             items: [
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/@edututor9539',
               },
-
             ],
           },
           {
-            //title: 'Community',
             items: [
               {
                 label: 'Карта сайта',
                 to: '/welcome',
               },
-
             ],
           },
-
         ],
         copyright: `Все права защищены © ${new Date().getFullYear()} `,
       },
@@ -195,5 +176,17 @@ const config = {
       },
     }),
 };
+
+/** @return {import('@docusaurus/types').Plugin} */
+function customPostCssPlugin() {
+  return {
+    name: 'custom-postcss',
+    configurePostCss(options) {
+      // Добавляем новый плагин PostCSS здесь
+      options.plugins.push(require('postcss-preset-env'));
+      return options;
+    },
+  };
+}
 
 export default config;
