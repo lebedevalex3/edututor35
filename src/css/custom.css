@@ -360,3 +360,49 @@ button.menu__caret {
   justify-content: center;
   clip-path: inset(0 0 0 0 round 10px);
 }
+
+/* Медиа запрос для изменения изображений */
+/* 40% на десктопе, 60% на мобильных */
+.responsive-img-40 {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .responsive-img-40 {
+    width: 70%;
+  }
+}
+
+/* 50% на десктопе, 70% на мобильных */
+.responsive-img-50 {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .responsive-img-50 {
+    width: 70%;
+  }
+}
+
+/* 60% на десктопе, 80% на мобильных */
+.responsive-img-60 {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .responsive-img-60 {
+    width: 80%;
+  }
+}
+
+/* 70% на десктопе, 90% на мобильных */
+.responsive-img-70 {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .responsive-img-70 {
+    width: 90%;
+  }
+}
+
