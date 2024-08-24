@@ -1,0 +1,163 @@
+---
+id: doc2
+title: Свойства логарифма
+description: свойства логарифмов, логарифм произведение, логарифм частного, основное логарифмическое тождество
+pagination_prev: null
+slug: /svoistva logarifma
+---
+
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
+---
+
+
+Логарифмы обладают рядом свойств, которые существенно упрощают вычисления. Эти свойства важно знать 📚.
+
+
+
+### Основное логарифмическое тождество
+
+Рассмотрим  пример $2^x=5$, где корень равен $x=\log_25$. Поскольку $x-$ это показатель степени,  равенство $2^x=5$ можно переписать как $2^{\log_25}=5$. 
+Это выражение известно как **основное логарифмическое тождество**.
+
+:::info Основное логарифмическое тождество
+
+$$
+a^{\log_ab}=b
+$$
+
+:::
+
+
+Например, $2^{\log_232}=32$.
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Вычислить $64^{0.5\log_212}$.
+
+ <Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+Преобразуем выражение:
+
+
+     $64^{0.5\log_212} = \left(2^6\right)^{0.5\log_212}=\left(2^{\log_212} \right)^3$.
+
+     Применяя основное логарифмическое тождество:
+
+     $\left(2^{\log_212} \right)^3=12^3.$
+
+Таким образом, $64^{0.5\log_212}=12^3$.
+
+
+
+
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+   Вычислить $6^{1+\log_65}$.
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+Применим свойство степени и основное логарифмическое тождество:
+
+   $6^{1+\log_65}=6\cdot 6^{\log_65}=6\cdot 5=30$.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+  </TabItem>
+
+<TabItem value="Пример №3" label="Пример №3">
+   Вычислить $\left(\cfrac13 \right)^{\log_36}$
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+Применим свойство степени и основное логарифмическое тождество:
+
+   $\left(\cfrac13 \right)^{\log_36}=\left(3^{-1} \right)^{\log_36}=\left(3^{\log_36} \right)^{-1}=\cfrac16$
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+  </TabItem>
+
+</Tabs>
+
+
+### Основные свойства логарифма
+
+:::info Логарифм произведения
+
+Если $\begin{cases} x>0, \\ y>0, \\ a>0, \\ a \neq 1. \end{cases}$, то выполняется равенство $$ \log_{a}xy=\log_{a}x+\log_{a}y$$
+
+Кратко формулируем: *логарифм произведения равен сумме логарифмов*.
+
+:::
+
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+Рассмотрим выражения $a^{\log_axy}$ и $a^{\log_ax+\log_ay}$. Докажем, что они равны.
+
+Используя основное логарифмическое тождество и свойства степени, запишем:
+$$
+\begin{gather*}
+a^{\log_axy}=xy; \\
+a^{\log_ax+\log_ay}=a^{\log_ax} \cdot a^{\log_ay}=xy. 
+\end{gather*}
+$$
+Следовательно, $a^{\log_axy} =a^{\log_ax+\log_ay}$. Поскольку степени с одинаковым основанием равны, равны и их показатели. Таким образом, получаем: $\log_{a}xy=\log_{a}x+\log_{a}y$.
+
+     </Typography>
+  </AccordionDetails>
+</Accordion>

@@ -46,7 +46,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Показательная и логарифмическая функции',
-      items: ['algebra/logarifm/doc1'],
+      items: ['algebra/logarifm/doc1','algebra/logarifm/doc2' ],
+      
     },
   ],
 
