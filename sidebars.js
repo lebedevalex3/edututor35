@@ -43,6 +43,11 @@ const sidebars = {
       label: 'Многочлены',
       items: ['algebra/polinomials/doc3'],
     },
+    {
+      type: 'category',
+      label: 'Показательная и логарифмическая функции',
+      items: ['algebra/logarifm/doc1'],
+    },
   ],
 
   arifmet: [
