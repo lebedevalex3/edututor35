@@ -22,6 +22,11 @@ const sidebars = {
     'algebra/introAlgebra',
     {
       type: 'category',
+      label: 'Рациональные уравнения и неравенства',      
+      items: ['algebra/rational_equations/doc1'],
+    },
+    {
+      type: 'category',
       label: 'Квадратные уравнения',
       link: {type: 'doc', id:'algebra/square-equations/introSquareEquations'},
       items: ['algebra/square-equations/doc2'],
@@ -46,7 +51,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Показательная и логарифмическая функции',
-      items: ['algebra/logarifm/doc1','algebra/logarifm/doc2' ],
+      items: ['algebra/logarifm/doc1','algebra/logarifm/doc2', 'algebra/logarifm/doc3' ],
       
     },
   ],
